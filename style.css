@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav nav a {
+  margin-left: 14px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.nav nav a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('main.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
